@@ -1,0 +1,21 @@
+@import './variables.scss';
+@import './elevator.scss';
+@import './button.scss';
+@import './floor.scss';
+
+.building {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: auto;
+    min-height: 70vh;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+
+    .elevator-buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: 75px;
+    }
+}

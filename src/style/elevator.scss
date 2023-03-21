@@ -1,0 +1,29 @@
+.elevators {
+    flex: 1;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 40px;
+    border: 1px solid rgb(190, 190, 190);
+
+    .elevator {
+        position: absolute;
+        z-index: 1;
+        width: 60%;
+        max-width: 40px;
+        left: 0;
+        right: 0;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+        transition: all 5s ease-in-out;
+
+        .occupied {
+            filter: invert(31%) sepia(100%) saturate(1294%) hue-rotate(331deg) brightness(98%) contrast(89%);
+        }
+
+        .arrived {
+            filter: invert(73%) sepia(19%) saturate(1033%) hue-rotate(91deg) brightness(94%) contrast(91%);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.elevator-button {
+    flex: 1 auto;
+    display: flex;
+    align-items: center;
+
+    button {
+        border: none;
+        padding: 6px 20px;
+        background: $green;
+        color: $white;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        cursor: pointer;
+
+        &.waiting {
+            background-color: $red;
+        }
+
+        &.arrived {
+            background: $white;
+            border: 1px solid $green;
+            color: $green;
+        }
+    }
+}

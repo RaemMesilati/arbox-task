@@ -1,0 +1,55 @@
+@import './building.scss';
+
+.elevators-exercise {
+    min-width: 50%;
+    flex: 1 100%;
+    display: flex;
+    flex-direction: column;
+
+    .elevator-hero {
+        text-align: center;
+        min-height: 30vh;
+        margin: 0;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            flex: 1 100%;
+        }
+
+        form {
+            display: flex;
+            gap: 20px;
+            align-items: end;
+
+            div {
+                text-align: start;
+                label {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $labelColor;
+                }
+
+                input {
+                    border-radius: 4px;
+                    padding: 10px 10px;
+                    color: $textColor;
+                    border: 1px solid $border;
+                }
+
+                button {
+                    background: $green;
+                    color: $white;
+                    border: none;
+                    height: 35px;
+                    border-radius: 4px;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}

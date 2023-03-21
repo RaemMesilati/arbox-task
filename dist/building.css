@@ -1,0 +1,22 @@
+.building {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin: auto;
+  max-width: 50%;
+  height: 100%;
+}
+.building .elevator-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+.building .elevator-buttons div {
+  flex: 1 auto;
+  display: flex;
+  align-items: center;
+}
+.building .elevator-buttons div button {
+  border: none;
+  padding: 0.5em;
+}/*# sourceMappingURL=building.css.map */
